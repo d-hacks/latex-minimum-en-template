@@ -1,0 +1,45 @@
+\documentclass[autodetect-engine, a4paper, twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{booktabs}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\setlength{\columnsep}{0.8cm}
+
+\newcommand\figref[1]{Figure~\ref{#1}}
+\newcommand\tabref[1]{Table~\ref{#1}}
+\newcommand\equref[1]{Equation~\ref{#1}}
+
+\title{LaTeX Minimum English Template}
+\author{Tomoki Tanimura}
+\date{\empty}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+Write the abstract of paper here.
+\end{abstract}
+
+% Main contents
+% section 1
+\input{sections/introduction.tex}
+% section 1
+\input{sections/fig_tab_equ.tex}
+
+% Reference papers
+\bibliographystyle{unsrt}
+\bibliography{ref}
+
+\end{document}
